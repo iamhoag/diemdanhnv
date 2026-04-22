@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Điểm danh nhân viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📋 Điểm danh nhân viên</h1>
+
+<div class="form">
+    <input type="text" id="ten" placeholder="Nhập tên nhân viên">
+
+    <select id="trangthai">
+        <option value="present">Có mặt</option>
+        <option value="absent">Vắng</option>
+    </select>
+
+    <input type="text" id="lydo" placeholder="Lý do vắng (nếu có)">
+    
+    <button onclick="diemDanh()">Điểm danh</button>
+</div>
+
+<h2>📌 Danh sách điểm danh</h2>
+<ul id="danhsach"></ul>
+
+<h2>📊 Thống kê</h2>
+<p id="tong">Tổng có mặt: 0</p>
+
+<script src="script.js"></script>
+</body>
+</html>
